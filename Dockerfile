@@ -5,7 +5,7 @@ FROM openjdk:21
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY deployment/storage_service-0.0.1-SNAPSHOT.jar /app/my-application.jar
+COPY storage_service-0.0.1-SNAPSHOT.jar /app/my-application.jar
 
 # Command to run the JAR file
 CMD ["java", "-jar", "/app/my-application.jar"]
